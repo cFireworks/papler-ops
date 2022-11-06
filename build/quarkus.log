@@ -1,0 +1,5 @@
+2022-11-07 01:03:39,775 admindemacbook-pro NativeImageGeneratorRunner$JDK9Plus[47994] INFO  [org.hib.rea.pro.imp.ReactiveIntegrator] (JPA Startup Thread: default-reactive) HR000001: Hibernate Reactive
+2022-11-07 01:03:39,782 admindemacbook-pro NativeImageGeneratorRunner$JDK9Plus[47994] INFO  [io.quarkus] (main) papler-devops-platform 1.0-SNAPSHOT native (powered by Quarkus 2.12.3.Final) started in 0.039s. Listening on: http://0.0.0.0:8081
+2022-11-07 01:03:39,794 admindemacbook-pro NativeImageGeneratorRunner$JDK9Plus[47994] INFO  [io.quarkus] (main) Profile prod activated. 
+2022-11-07 01:03:39,795 admindemacbook-pro NativeImageGeneratorRunner$JDK9Plus[47994] INFO  [io.quarkus] (main) Installed features: [cdi, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, reactive-mysql-client, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]
+2022-11-07 01:03:40,457 admindemacbook-pro NativeImageGeneratorRunner$JDK9Plus[47994] INFO  [io.quarkus] (Shutdown thread) papler-devops-platform stopped in 0.003s
