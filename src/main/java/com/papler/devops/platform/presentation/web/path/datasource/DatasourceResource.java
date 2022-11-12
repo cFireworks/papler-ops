@@ -6,6 +6,7 @@ import com.papler.devops.platform.application.dto.result.DatasourceRecordDTO;
 import com.papler.devops.platform.application.dto.result.DatasourceRecordItem;
 import com.papler.devops.platform.infrastructure.datasource.mysql.DatabaseBoundary;
 import io.smallrye.mutiny.Uni;
+import org.jboss.resteasy.reactive.RestResponse;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -27,7 +28,7 @@ public class DatasourceResource {
 
     @POST
     @Path("/query")
-    public Uni<Response> query(DatasourceQuery param) {
+    public Uni<RestResponse<DatasourceRecordDTO>> query(DatasourceQuery param) {
         DatasourceRecordDTO result = new DatasourceRecordDTO();
         result.setId("888");
         List<String> header = Arrays.asList("id", "name", "age");
@@ -38,7 +39,7 @@ public class DatasourceResource {
         result.setRows(List.of(item));
 
         result.setContent("ok");
-        return Uni.createFrom().item(Response.ok(result).build());
+        return Uni.createFrom().item(RestResponse.ok(result));
     }
 
     @POST

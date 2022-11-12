@@ -1,12 +1,14 @@
 package com.papler.devops.platform.application.dto.result;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import io.vertx.codegen.annotations.DataObject;
 
 import java.io.Serializable;
 import java.util.List;
 
 @DataObject
+@RegisterForReflection
 public class DatasourceRecordDTO implements Serializable {
 
     private static final long serialVersionUID = -2540109612845828694L;
